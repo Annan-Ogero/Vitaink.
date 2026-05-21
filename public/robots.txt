@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vitalink.fyi/sitemap.xml
+
+Disallow: /cart
+Disallow: /api/

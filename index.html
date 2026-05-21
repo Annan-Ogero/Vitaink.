@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>VitaLink — Genuine NeoLife Products in Kenya | Nutrition, Skincare & Wellness</title>
+    <meta name="description" content="Buy genuine NeoLife nutrition, weight management, immunity, and skincare products in Kenya. Fast delivery across Nairobi and upcountry. Science-backed supplements trusted for 65+ years." />
+    <meta name="keywords" content="NeoLife Kenya, buy NeoLife products Kenya, NeoLife supplements Nairobi, NeoLife distributor Kenya, Pro Vitality Kenya, NeoLife shake Kenya, nutrition supplements Kenya, wellness products Kenya, NeoLife weight loss Kenya, immunity supplements Kenya" />
+    <meta name="author" content="VitaLink — Authorised NeoLife Independent Promoter" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#12a06a" />
+    <link rel="canonical" href="https://vitalink.fyi/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vitalink.fyi/" />
+    <meta property="og:title" content="VitaLink — Genuine NeoLife Products in Kenya" />
+    <meta property="og:description" content="Science-backed NeoLife nutrition, skincare, and home care products. Delivered across Kenya. Trusted for 65+ years in 50+ countries." />
+    <meta property="og:image" content="https://vitalink.fyi/icon-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="VitaLink — NeoLife Products Kenya" />
+    <meta property="og:site_name" content="VitaLink" />
+    <meta property="og:locale" content="en_KE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VitaLink — Genuine NeoLife Products in Kenya" />
+    <meta name="twitter:description" content="Science-backed NeoLife nutrition, skincare, and home care products. Delivered across Kenya." />
+    <meta name="twitter:image" content="https://vitalink.fyi/icon-512.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/favicon.svg" color="#12a06a" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="VitaLink" />
+    <meta name="application-name" content="VitaLink" />
+    <meta name="msapplication-TileColor" content="#12a06a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+
+    <!-- Structured Data: Organisation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "VitaLink",
+      "url": "https://vitalink.fyi",
+      "logo": "https://vitalink.fyi/icon-512.png",
+      "description": "Authorised NeoLife Independent Promoter in Kenya. Genuine nutrition, skincare, and home care products delivered across Kenya.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "KE",
+        "availableLanguage": ["English", "Swahili"]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Kenya"
+      },
+      "sameAs": []
+    }
+    </script>
+
+    <!-- Structured Data: WebSite with Sitelinks Searchbox -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "VitaLink",
+      "url": "https://vitalink.fyi",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vitalink.fyi/products?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Register service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('VitaLink SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err))
+        })
+      }
+    </script>
+  </body>
+</html>

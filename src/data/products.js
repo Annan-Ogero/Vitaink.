@@ -1,0 +1,331 @@
+// VitaLink — NeoLife product catalogue
+import imgs from './images.js'
+
+export const NICHES = [
+  { id: 'all',      label: 'All Products' },
+  { id: 'energy',   label: 'Energy & Wellness' },
+  { id: 'weight',   label: 'Weight Management' },
+  { id: 'immunity', label: 'Immunity & Gut Health' },
+  { id: 'skin',     label: 'Skin & Personal Care' },
+  { id: 'home',     label: 'Home Care' },
+]
+
+export const products = [
+  // ─── Energy & Wellness ───────────────────────────────────────────────────
+  {
+    id: 'pro-vitality-plus',
+    niche: 'energy',
+    name: 'Pro Vitality+',
+    tagline: 'Your complete daily nutrition foundation',
+    price: 4800,
+    unit: '30 sachets',
+    placeholder: '🌿',
+    image: imgs['pro-vitality-plus'],
+    badge: 'Best Seller',
+    description:
+      'Pro Vitality+ is NeoLife\'s flagship all-in-one daily pack. Each sachet combines omega-3s, whole-food vitamins, minerals, and cellular nutrients — everything your body needs to function at its best, in a single convenient daily serving.',
+    benefits: [
+      'Sustained energy throughout the day',
+      'Supports heart, brain, and immune health',
+      'Whole-food sourced — not synthetic',
+      'Non-GMO and free from artificial additives',
+      '60+ years of NeoLife science behind every formula',
+    ],
+    whoFor: 'Ideal for working professionals, students, and anyone who wants a complete nutritional foundation without taking multiple separate supplements.',
+    ingredients: 'Omega-3 Salmon Oil, Carotenoid Complex, Tre-en-en Grain Concentrates, Chelated Cal-Mag',
+    inStock: true,
+  },
+  {
+    id: 'neolife-tea',
+    niche: 'energy',
+    name: 'NeoLife Tea',
+    tagline: 'Clean energy with real herbal benefits',
+    price: 3200,
+    unit: '15 sticks',
+    placeholder: '🍵',
+    image: imgs['neolife-tea'],
+    badge: null,
+    description:
+      'NeoLife Tea is a premium herbal tea blend that delivers a gentle, sustained energy lift — without the crash that comes from coffee or sugar-loaded drinks. Formulated with a blend of green tea, ginseng, and adaptogenic herbs.',
+    benefits: [
+      'Clean, jitter-free energy boost',
+      'Supports mental focus and alertness',
+      'Rich in antioxidants',
+      'Zero artificial sweeteners or colours',
+      'Easy stick pack — mix in hot or cold water',
+    ],
+    whoFor: 'Perfect for students, early risers, and anyone wanting a healthier alternative to energy drinks or coffee.',
+    ingredients: 'Green tea extract, Siberian ginseng, eleuthero, natural flavours',
+    inStock: true,
+  },
+  {
+    id: 'tre-en-en',
+    niche: 'energy',
+    name: 'Tre-en-en',
+    tagline: 'Cellular energy at the source',
+    price: 2200,
+    unit: '60 capsules',
+    placeholder: '⚡',
+    image: imgs['tre-en-en'],
+    badge: null,
+    description:
+      'Tre-en-en provides whole grain lipids and sterols that nourish cells at the foundational level. When your cells are properly nourished, energy production, nutrient absorption, and overall vitality all improve.',
+    benefits: [
+      'Improves cellular nutrient uptake',
+      'Reduces fatigue at the cellular level',
+      'Supports healthy metabolism',
+      'Made from whole grain concentrates',
+      'Flagship NeoLife product since 1958',
+    ],
+    whoFor: 'Anyone who feels chronically tired even after sleep, or wants to maximise how well their body uses nutrition.',
+    ingredients: 'Wheat germ, rice bran, soy bean lipids and sterols',
+    inStock: true,
+  },
+  {
+    id: 'vitamin-b-complex',
+    niche: 'energy',
+    name: 'Vitamin B Complex',
+    tagline: 'Sustained release B vitamins for all-day energy',
+    price: 2800,
+    unit: '60 tablets',
+    placeholder: '💊',
+    image: imgs['vitamin-b-complex'],
+    badge: null,
+    description:
+      'A complete sustained-release B vitamin formula that supports energy metabolism, nervous system health, and stress response. Unlike standard B vitamins that spike and crash, this formula releases nutrients steadily over hours.',
+    benefits: [
+      'Sustained release — no energy spikes or crashes',
+      'Supports stress resilience and mood',
+      'Essential for converting food into energy',
+      'Supports healthy nerve function',
+      'Whole-food sourced B vitamin complex',
+    ],
+    whoFor: 'Students under pressure, busy professionals, and anyone dealing with stress or low energy.',
+    ingredients: 'B1, B2, B3, B5, B6, B7, B9, B12 — whole food complex, sustained release',
+    inStock: true,
+  },
+
+  // ─── Weight Management ───────────────────────────────────────────────────
+  {
+    id: 'neolifeshake',
+    niche: 'weight',
+    name: 'NeoLifeShake',
+    tagline: 'A complete meal in a glass',
+    price: 5500,
+    unit: 'per pack',
+    placeholder: '🥤',
+    image: imgs['neolifeshake'],
+    badge: 'Popular',
+    description:
+      'NeoLifeShake is a premium meal replacement shake with 20g of plant-based protein, 22 vitamins and minerals, and a satisfying texture that keeps you full for hours. Available in Berries & Cream, Chocolate, and Vanilla.',
+    benefits: [
+      '20g of high-quality plant protein per serving',
+      'Keeps you full — supports reduced calorie intake',
+      '22 essential vitamins and minerals',
+      'No artificial sweeteners, colours, or flavours',
+      'Supports lean muscle and healthy weight goals',
+    ],
+    whoFor: 'Anyone looking to manage their weight without starving, replace unhealthy meals, or increase daily protein intake.',
+    ingredients: 'Soy protein isolate, oat fibre, vitamins A C D E K, calcium, magnesium, iron',
+    inStock: true,
+  },
+  {
+    id: 'nutrishake',
+    niche: 'weight',
+    name: 'NutriShake',
+    tagline: 'High protein, low sugar shake for lean results',
+    price: 4200,
+    unit: 'per pack',
+    placeholder: '🥛',
+    image: imgs['nutrishake'],
+    badge: null,
+    description:
+      'NutriShake delivers clean protein to support muscle tone and healthy body composition. Low in sugar, high in nutrients — ideal post-workout or as a light meal replacement.',
+    benefits: [
+      'High protein, low sugar formula',
+      'Supports muscle recovery after exercise',
+      'Helps maintain lean body composition',
+      'Easy to digest — no bloating',
+      'Mixes easily in water or milk',
+    ],
+    whoFor: 'Gym-goers, active people, and anyone wanting to build or maintain lean muscle while managing weight.',
+    ingredients: 'Whey protein concentrate, natural flavours, vitamins, minerals',
+    inStock: true,
+  },
+  {
+    id: 'ami-tone',
+    niche: 'weight',
+    name: 'Ami-Tone',
+    tagline: 'Body composition support with amino acids',
+    price: 3600,
+    unit: '6 × 1L bottles',
+    placeholder: '💪',
+    image: imgs['ami-tone'],
+    badge: null,
+    description:
+      'Ami-Tone is a ready-to-drink amino acid formula that supports healthy body composition, muscle tone, and metabolism. A great companion to any weight management programme.',
+    benefits: [
+      'Supports toning and lean muscle definition',
+      'Amino acids aid muscle recovery',
+      'Supports healthy metabolism',
+      'Ready to drink — no mixing needed',
+      'Low calorie, great taste',
+    ],
+    whoFor: 'Anyone on a fitness or weight management journey who wants additional amino acid support.',
+    ingredients: 'Essential amino acids, BCAAs, natural flavours, electrolytes',
+    inStock: true,
+  },
+
+  // ─── Immunity & Gut Health ───────────────────────────────────────────────
+  {
+    id: 'phytodefence',
+    niche: 'immunity',
+    name: 'PhytoDefence',
+    tagline: 'Whole-food antioxidant protection',
+    price: 6800,
+    unit: '30 sachets',
+    placeholder: '🛡️',
+    image: imgs['phytodefence'],
+    badge: 'Top Rated',
+    description:
+      'PhytoDefence is one of NeoLife\'s most advanced formulas — a concentrated blend of carotenoids, flavonoids, and polyphenols from real fruits and vegetables. It provides the antioxidant equivalent of eating 5+ servings of produce daily.',
+    benefits: [
+      'Powerful antioxidant protection from whole foods',
+      'Supports immune system strength',
+      'Neutralises harmful free radicals',
+      'Equivalent to 5+ daily servings of vegetables',
+      'Peer-reviewed NeoLife science',
+    ],
+    whoFor: 'Anyone who wants serious immune support, especially people who don\'t eat enough fruits and vegetables daily.',
+    ingredients: 'Carotenoid complex (tomato, carrot, spinach), flavonoid complex, cruciferous vegetable blend',
+    inStock: true,
+  },
+  {
+    id: 'aloe-vera-plus',
+    niche: 'immunity',
+    name: 'Aloe Vera Plus',
+    tagline: 'Gut health and digestive comfort',
+    price: 2100,
+    unit: '1 litre',
+    placeholder: '🌱',
+    image: imgs['aloe-vera-plus'],
+    badge: null,
+    description:
+      'NeoLife Aloe Vera Plus is a pure, stabilised aloe vera drink that soothes and supports the digestive tract. Regular use supports a healthy gut lining, comfortable digestion, and improved nutrient absorption.',
+    benefits: [
+      'Soothes the digestive tract lining',
+      'Supports healthy gut microbiome',
+      'Improves nutrient absorption',
+      'Stabilised aloe — full potency preserved',
+      'No laxative effect — gentle and safe for daily use',
+    ],
+    whoFor: 'Anyone with digestive discomfort, bloating, or who wants to support gut health as part of a daily wellness routine.',
+    ingredients: 'Stabilised aloe vera gel, natural preservatives',
+    inStock: true,
+  },
+  {
+    id: 'vitamin-c',
+    niche: 'immunity',
+    name: 'Vitamin C (Sustained Release)',
+    tagline: '24-hour immune protection from real food sources',
+    price: 2600,
+    unit: '100 tablets',
+    placeholder: '🍊',
+    image: imgs['vitamin-c'],
+    badge: null,
+    description:
+      'Unlike standard vitamin C supplements that flush out within hours, NeoLife\'s Vitamin C uses sustained-release technology to deliver a steady supply over 24 hours — maximising absorption and immune protection.',
+    benefits: [
+      'Sustained release over 24 hours',
+      'Supports immune cell production',
+      'Powerful antioxidant protection',
+      'Supports collagen synthesis for healthy skin',
+      'Sourced from whole food concentrates',
+    ],
+    whoFor: 'Everyone — vitamin C is one of the most important daily nutrients for immune health, energy, and skin.',
+    ingredients: 'Ascorbic acid, acerola cherry, citrus bioflavonoids, rose hip concentrate',
+    inStock: true,
+  },
+
+  // ─── Skin & Personal Care ────────────────────────────────────────────────
+  {
+    id: 'nutriance-moisturizer',
+    niche: 'skin',
+    name: 'Nutriance Organic Moisturizer',
+    tagline: 'Marine-botanical organic skin nourishment',
+    price: 4500,
+    unit: 'per bottle',
+    placeholder: '✨',
+    image: imgs['nutriance-moisturizer'],
+    badge: 'Organic',
+    description:
+      'The Nutriance Organic range uses rare marine ingredients from the pristine Brittany coastline, combined with certified organic botanicals. ECOCERT and COSMOS certified — no parabens, sulphates, or synthetic fragrance.',
+    benefits: [
+      'ECOCERT COSMOS certified organic',
+      'Marine collagen supports skin elasticity',
+      'Deeply hydrates without a greasy feel',
+      'Reduces early signs of aging',
+      'Suitable for all skin types',
+    ],
+    whoFor: 'Women and men who want premium skincare without harsh chemicals — especially those with sensitive skin.',
+    ingredients: 'Marine collagen, organic aloe vera, shea butter, botanical extracts',
+    inStock: true,
+  },
+  {
+    id: 'omega-3-salmon-oil',
+    niche: 'skin',
+    name: 'Omega-3 Salmon Oil Plus',
+    tagline: 'Healthy skin, heart, and brain from the inside',
+    price: 4200,
+    unit: '90 capsules',
+    placeholder: '🐟',
+    image: imgs['omega-3-salmon-oil'],
+    badge: null,
+    description:
+      'Premium purified omega-3 fatty acids from wild salmon — the most researched nutrient for skin health. Regular supplementation visibly improves skin hydration, reduces inflammation, and supports a natural glow.',
+    benefits: [
+      'Improves skin moisture and elasticity',
+      'Reduces skin inflammation and redness',
+      'Supports heart and brain health',
+      'Molecularly distilled — free from mercury',
+      'Clinical-grade omega-3 concentration',
+    ],
+    whoFor: 'Anyone wanting glowing, hydrated skin from within — also excellent for heart health and mental clarity.',
+    ingredients: 'Purified salmon oil (EPA, DHA), natural vitamin E, lemon flavour',
+    inStock: true,
+  },
+
+  // ─── Home Care ───────────────────────────────────────────────────────────
+  {
+    id: 'super-10',
+    niche: 'home',
+    name: 'Super 10',
+    tagline: 'One cleaner. Every surface.',
+    price: 1200,
+    unit: '1 litre',
+    placeholder: '🧴',
+    image: imgs['super-10'],
+    badge: null,
+    description:
+      'NeoLife Super 10 is a concentrated, biodegradable multi-purpose cleaner that replaces 10 different household cleaning products. A tiny amount goes a very long way — making it highly economical and eco-friendly.',
+    benefits: [
+      'Replaces 10 household cleaning products',
+      'Biodegradable — safe for the environment',
+      'Highly concentrated — very economical',
+      'No toxic fumes or harsh chemicals',
+      'Safe around children and pets',
+    ],
+    whoFor: 'Households and families who want a single powerful cleaner that is safe, effective, and environmentally responsible.',
+    ingredients: 'Plant-based surfactants, biodegradable cleaning agents, natural fragrance',
+    inStock: true,
+  },
+]
+
+export const getFeatured = () =>
+  products.filter(p => ['pro-vitality-plus', 'neolifeshake', 'phytodefence', 'vitamin-c', 'omega-3-salmon-oil', 'neolife-tea'].includes(p.id))
+
+export const getByNiche = (niche) =>
+  niche === 'all' ? products : products.filter(p => p.niche === niche)
+
+export const getById = (id) =>
+  products.find(p => p.id === id)
